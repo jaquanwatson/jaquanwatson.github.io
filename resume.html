@@ -5,9 +5,30 @@
   <title>Jaquan Watson | Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @media print {
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      a {
+        text-decoration: none;
+        color: black !important;
+      }
+      .no-print {
+        display: none;
+      }
+      .print-p-0 {
+        padding: 0 !important;
+      }
+      .print-shadow-none {
+        box-shadow: none !important;
+      }
+    }
+  </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
-  <div class="max-w-4xl mx-auto p-8 bg-white shadow-lg mt-10 rounded-lg">
+  <div class="max-w-4xl mx-auto p-8 bg-white shadow-lg mt-10 rounded-lg print-p-0 print-shadow-none">
     <h1 class="text-3xl font-bold mb-2">Jaquan Greene-Watson</h1>
     <p class="text-lg mb-4">Cloud & Systems Engineer</p>
     <p class="mb-6">
@@ -16,10 +37,14 @@
       <a class="text-blue-600 hover:underline" href="https://github.com/jgreenewatson">GitHub</a>
     </p>
 
-    <div class="mb-8">
-      <a href="resume.pdf" download class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+    <!-- Download and Print Buttons -->
+    <div class="mb-8 no-print">
+      <a href="resume.pdf" download class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition mr-4">
         📄 Download Resume (PDF)
       </a>
+      <button onclick="window.print()" class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition">
+        🖨️ Print Resume
+      </button>
     </div>
 
     <section class="mb-6">
@@ -69,7 +94,7 @@
       </ul>
     </section>
 
-    <section class="mb-6">
+    <section>
       <h2 class="text-2xl font-semibold border-b pb-2 mb-3">Certifications</h2>
       <ul class="list-disc list-inside space-y-1">
         <li>AWS Certified Cloud Practitioner</li>
