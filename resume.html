@@ -4,65 +4,92 @@
   <meta charset="UTF-8">
   <title>Jaquan Watson | Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 850px; margin: 30px auto; padding: 20px; color: #222; line-height: 1.6; }
-    h1, h2 { color: #000; }
-    h2 { border-bottom: 1px solid #ccc; padding-bottom: 3px; }
-    .section { margin-bottom: 20px; }
-    ul { padding-left: 20px; }
-    a { color: #007acc; }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Jaquan Watson</h1>
-  <p>Cloud & Systems Engineer | Data & Cybersecurity Enthusiast</p>
-  <p><a href="mailto:your_email@example.com">jqwatson96@gmail.com</a> | <a href="https://www.linkedin.com/in/jaquanwatson">LinkedIn</a> | <a href="https://github.com/jaquanwatson">GitHub</a></p>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <div class="max-w-4xl mx-auto p-8 bg-white shadow-lg mt-10 rounded-lg">
+    <h1 class="text-3xl font-bold mb-2">Jaquan Greene-Watson</h1>
+    <p class="text-lg mb-4">Cloud & Systems Engineer</p>
+    <p class="mb-6">
+      <a class="text-blue-600 hover:underline" href="mailto:jqwatson96@gmail.com">jqwatson96@gmail.com</a> |
+      <a class="text-blue-600 hover:underline" href="https://www.linkedin.com/in/jaquan-greenewatson/">LinkedIn</a> |
+      <a class="text-blue-600 hover:underline" href="https://github.com/jgreenewatson">GitHub</a>
+    </p>
 
-  <div class="section">
-    <h2>Summary</h2>
-    <p>Experienced Systems Administrator with 2+ years managing hybrid Microsoft environments. Passionate about automation, security, and building efficient tools. Actively pursuing roles in cloud, data, and cybersecurity engineering.</p>
-  </div>
+    <div class="mb-8">
+      <a href="resume.pdf" download class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+        📄 Download Resume (PDF)
+      </a>
+    </div>
 
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>PowerShell, Python, SQL</li>
-      <li>Microsoft 365, Active Directory, Intune, Azure</li>
-      <li>Automation, Endpoint Management, Security+ Certified</li>
-    </ul>
-  </div>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-3">Professional Summary</h2>
+      <p>Cloud & Systems Engineer with 2+ years of experience in secure infrastructure management, automation, and cloud environments. Adept at optimizing performance across M365, Azure, and hybrid systems while supporting cybersecurity and compliance initiatives. Certified in AWS, Security+, ITIL, and Linux Foundations. Seeking remote roles focused on cloud engineering, infrastructure automation, or secure systems administration.</p>
+    </section>
 
-  <div class="section">
-    <h2>Experience</h2>
-    <h3>Systems Administrator – Perikin Enterprises</h3>
-    <p><em>2023–Present</em></p>
-    <ul>
-      <li>Managed M365, AD, and Intune for 100+ users</li>
-      <li>Automated user and license tasks using PowerShell</li>
-      <li>Created internal tools for monitoring and reporting</li>
-    </ul>
-  </div>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-3">Experience</h2>
+      <div class="mb-3">
+        <h3 class="text-xl font-semibold">Cloud & Systems Engineer – Perikin Enterprises</h3>
+        <p class="text-sm text-gray-600 italic">Aug 2023 – Present | Albuquerque, NM</p>
+        <ul class="list-disc list-inside space-y-1 mt-2">
+          <li>Delivered remote IT support, resolving Windows Server, Active Directory, and network issues across distributed environments.</li>
+          <li>Managed Azure virtual machines, performed updates, and deployed security patches to ensure system performance.</li>
+          <li>Automated routine tasks using PowerShell, reducing ticket response time by 25%.</li>
+          <li>Designed automated rules and recurring reports within SolarWinds SIEM for security monitoring.</li>
+          <li>Integrated osTicket for improved helpdesk operations, analytics, and reporting.</li>
+          <li>Developed IT policies to achieve CMMC compliance aligned with NIST 800-171/172 frameworks.</li>
+          <li>Authored and maintained technical documentation for procedures and compliance workflows.</li>
+          <li>Implemented security configurations via Microsoft Intune and Azure AD for hybrid environments.</li>
+          <li>Optimized Azure VM and storage resources, reducing cloud spend by 15%.</li>
+          <li>Supported GCC High M365 environments ensuring secure collaboration and identity governance.</li>
+          <li>Built PowerShell automation scripts for AD and M365 user audits.</li>
+          <li>Maintained internal GitHub repo for reusable scripts and documentation.</li>
+        </ul>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Education</h2>
-    <p>MS, IT Management – Western Governors University (In Progress)</p>
-    <p>BS, Business Administration – Lewis University (2022)</p>
-  </div>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-3">Education</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Master of Science, Information Technology Management – Western Governors University (Expected 2026)</li>
+        <li>Bachelor of Science, Information Technology Management – Western Governors University (2023–2025)</li>
+        <li>Bachelor of Science, Business Administration – Lewis University (2020–2022)</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Security+, Network+, A+, ITIL v4, AWS CCP, LPIC-1</li>
-    </ul>
-  </div>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-3">Technical Skills</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>Cloud & Security: Azure AD, Microsoft Intune, M365 (GCC High), AWS (IAM, EC2), Conditional Access, NIST 800-171/172 Compliance</li>
+        <li>Infrastructure & Automation: Windows Server, Linux (Ubuntu, CentOS), PowerShell, Hyper-V, SolarWinds, osTicket</li>
+        <li>Programming & Scripting: Python, PowerShell, JavaScript, SQL</li>
+        <li>Tools & Platforms: Active Directory, VMware, ServiceNow, GitHub, Salesforce, Docker</li>
+        <li>Networking: TCP/IP, DNS, DHCP, VLANs, VPNs, Routing Protocols</li>
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/jaquanwatson/account-inactivity-monitor">Account Inactivity Monitor</a></li>
-      <li><a href="https://github.com/jaquanwatson/m365-license-tracker">M365 License Tracker</a></li>
-      <li><a href="https://github.com/jaquanwatson/password-reminder-bot">Password Reminder Bot</a></li>
-    </ul>
+    <section class="mb-6">
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-3">Certifications</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li>AWS Certified Cloud Practitioner</li>
+        <li>CompTIA Security+</li>
+        <li>LPI Linux Foundations (LPIC-1)</li>
+        <li>CompTIA Network+</li>
+        <li>CompTIA A+</li>
+        <li>ITIL Foundation v4 Certificate in IT Service Management</li>
+        <li>HIPAA Security Awareness for IT Professionals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-3">Projects</h2>
+      <ul class="list-disc list-inside space-y-1">
+        <li><a class="text-blue-600 hover:underline" href="https://github.com/jaquanwatson/account-inactivity-monitor">Account Inactivity Monitor</a> – Detects inactive AD/M365 accounts and performs logging or deactivation actions.</li>
+        <li><a class="text-blue-600 hover:underline" href="https://github.com/jaquanwatson/m365-license-tracker">M365 License Tracker</a> – Tracks license usage across Microsoft 365 tenants using the Graph API.</li>
+        <li><a class="text-blue-600 hover:underline" href="https://github.com/jaquanwatson/password-reminder-bot">Password Reminder Bot</a> – Notifies users about expiring passwords, integrated with SQL-based credential tracking.</li>
+      </ul>
+    </section>
   </div>
 </body>
 </html>
