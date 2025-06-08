@@ -1,68 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Jaquan Watson | Resume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jaquan Watson | Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; max-width: 850px; margin: 30px auto; padding: 20px; color: #222; line-height: 1.6; }
-    h1, h2 { color: #000; }
-    h2 { border-bottom: 1px solid #ccc; padding-bottom: 3px; }
-    .section { margin-bottom: 20px; }
-    ul { padding-left: 20px; }
-    a { color: #007acc; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    .certification-badge::before {
+      content: "\1F393"; /* Graduation Cap */
+      margin-right: 0.5rem;
+    }
+    .skill-tag::before {
+      content: "\1F4BB"; /* Laptop */
+      margin-right: 0.5rem;
+    }
+    .in-progress-badge::before {
+      content: "\23F3"; /* Hourglass */
+      margin-right: 0.5rem;
+    }
   </style>
 </head>
-<body>
-  <h1>Jaquan Watson</h1>
-  <p>Cloud & Systems Engineer | Data & Cybersecurity Enthusiast</p>
-  <p><a href="mailto:your_email@example.com">your_email@example.com</a> | <a href="https://www.linkedin.com/in/jaquanwatson">LinkedIn</a> | <a href="https://github.com/jaquanwatson">GitHub</a></p>
 
-  <div class="section">
-    <h2>Summary</h2>
-    <p>Experienced Systems Administrator with 2+ years managing hybrid Microsoft environments. Passionate about automation, security, and building efficient tools. Actively pursuing roles in cloud, data, and cybersecurity engineering.</p>
-  </div>
+<body class="bg-gradient-to-br from-slate-50 to-blue-50 text-gray-800 leading-relaxed min-h-screen">
+  <main class="max-w-5xl mx-auto p-4 sm:p-8 bg-white shadow-2xl mt-8 mb-8 rounded-2xl print-p-0 print-shadow-none border border-gray-100">
 
-  <div class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>PowerShell, Python, SQL</li>
-      <li>Microsoft 365, Active Directory, Intune, Azure</li>
-      <li>Automation, Endpoint Management, Security+ Certified</li>
-    </ul>
-  </div>
+    <!-- Header Section -->
+    <header class="text-center mb-8 pb-6 border-b border-gray-200">
+      <h1 class="text-4xl font-bold mb-3 bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+        Jaquan Watson
+      </h1>
+      <p class="text-xl text-gray-600 mb-4 font-medium">Cloud & Systems Engineer | Cybersecurity Professional</p>
+      <div class="flex flex-wrap justify-center gap-4 sm:gap-6 text-sm">
+        <a class="contact-link text-blue-600 font-medium" href="mailto:jqwatson96@gmail.com">📧 jqwatson96@gmail.com</a>
+        <a class="contact-link text-blue-600 font-medium" href="https://www.linkedin.com/in/jaquanwatson/" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+        <a class="contact-link text-blue-600 font-medium" href="https://github.com/jaquanwatson" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+      </div>
+    </header>
 
-  <div class="section">
-    <h2>Experience</h2>
-    <h3>Systems Administrator – Perikin Enterprises</h3>
-    <p><em>2023–Present</em></p>
-    <ul>
-      <li>Managed M365, AD, and Intune for 100+ users</li>
-      <li>Automated user and license tasks using PowerShell</li>
-      <li>Created internal tools for monitoring and reporting</li>
-    </ul>
-  </div>
+    <!-- Action Buttons -->
+    <div class="mb-8 text-center no-print">
+      <a href="resume.pdf" download class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 mr-2 sm:mr-4 inline-block shadow-lg hover:shadow-xl transform hover:-translate-y-1" rel="noopener noreferrer">
+        📄 Download Resume (PDF)
+      </a>
+      <button onclick="window.print()" class="bg-gradient-to-r from-green-600 to-green-700 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg hover:from-green-700 hover:to-green-800 transition-all duration-300 inline-block shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+        🖨️ Print Resume
+      </button>
+    </div>
 
-  <div class="section">
-    <h2>Education</h2>
-    <p>MS, IT Management – Western Governors University (In Progress)</p>
-    <p>BS, Business Administration – Lewis University (2022)</p>
-  </div>
+    <!-- Professional Summary -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-blue-700">Professional Summary</h2>
+      <p>Results-driven IT Systems Administrator and Cybersecurity Professional with 3+ years of experience managing secure, scalable environments in Microsoft 365, Azure, and hybrid infrastructures. Military-trained with advanced avionics systems and program management background. Proven expertise in IT automation, cloud security, and operational excellence. Skilled in PowerShell scripting, endpoint protection, compliance support, and cloud platforms like AWS and Microsoft Azure. Currently pursuing advanced cybersecurity certifications (CompTIA CySA+) to deepen skills in threat detection and response. Passionate about leveraging automation and data-driven insights to enhance enterprise security and resilience.</p>
+    </section>
 
-  <div class="section">
-    <h2>Certifications</h2>
-    <ul>
-      <li>Security+, Network+, A+, ITIL v4, AWS CCP, LPIC-1</li>
-    </ul>
-  </div>
+    <!-- Core Competencies -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-blue-700">Core Competencies</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="skill-tag px-3 py-1 rounded-full">Security Operations (SecOps)</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Threat Management</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Compliance Support</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Microsoft 365, Azure, AWS</span>
+        <span class="skill-tag px-3 py-1 rounded-full">IAM, MFA, Conditional Access</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Intune, Defender for Endpoint</span>
+        <span class="skill-tag px-3 py-1 rounded-full">PowerShell Scripting</span>
+        <span class="skill-tag px-3 py-1 rounded-full">SQL Server</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Hyper-V | GPO Management</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Incident Response | Risk Assessment</span>
+      </div>
+    </section>
 
-  <div class="section">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="https://github.com/jaquanwatson/account-inactivity-monitor">Account Inactivity Monitor</a></li>
-      <li><a href="https://github.com/jaquanwatson/m365-license-tracker">M365 License Tracker</a></li>
-      <li><a href="https://github.com/jaquanwatson/password-reminder-bot">Password Reminder Bot</a></li>
-    </ul>
-  </div>
+    <!-- Certifications -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-blue-700">Certifications</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="certification-badge">CompTIA Security+</span>
+        <span class="certification-badge">AWS Certified Cloud Practitioner</span>
+        <span class="certification-badge">ITIL v4 Foundations</span>
+        <span class="certification-badge">LPI Linux Essentials (LPIC-1)</span>
+        <span class="certification-badge in-progress-badge">In Progress: CompTIA CySA+</span>
+        <span class="certification-badge in-progress-badge">Planned: Microsoft SC-200 | AZ-500</span>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-blue-700">Professional Experience</h2>
+      <div class="space-y-6">
+        <div class="experience-card p-6 rounded-xl">
+          <h3 class="text-xl font-semibold mb-2">Systems Administrator / Engineer</h3>
+          <p class="text-gray-600 mb-2">Perikin Enterprises | [Month/Year] - Present</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Manage and secure Microsoft 365 GCC High environment for 150+ endpoints and Hyper-V virtual machines.</li>
+            <li>Implement and manage security configurations: MFA enforcement, conditional access, role-based access controls.</li>
+            <li>Lead endpoint management and patching via Intune and SolarWinds, reducing security vulnerabilities.</li>
+            <li>Develop PowerShell scripts to automate user provisioning, license management, and system reporting.</li>
+            <li>Monitor Active Directory accounts for inactivity and automate deactivation workflows to enhance security.</li>
+            <li>Collaborate with cross-functional teams to improve cloud security posture and ensure NIST 800-171 compliance.</li>
+          </ul>
+        </div>
+
+        <div class="experience-card p-6 rounded-xl">
+          <h3 class="text-xl font-semibold mb-2">Avionics Systems Specialist (2A251) | Program Manager</h3>
+          <p class="text-gray-600 mb-2">United States Air Force | Kirtland AFB, NM | March 2018 - March 2024</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li>Performed maintenance on $691M fleet of HC/MC-130J aircraft, diagnosing communication and navigation system malfunctions.</li>
+            <li>Led maintenance teams, executing over 350 maintenance actions and achieving a 95% pass rate on quality evaluations.</li>
+            <li>Managed avionics system upgrades ensuring compliance with FAA and DoD standards.</li>
+            <li>Directed training operations, qualifying 200+ tasks and reducing upgrade timelines by 60 days.</li>
+            <li>Supervised readiness programs supporting 136 enlisted airmen and officers.</li>
+            <li>Facilitated group physical training sessions, improving unit fitness pass rate by 15%.</li>
+            <li>Awarded Below-The-Zone promotion for exceptional leadership and performance.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-blue-700">Projects & Initiatives</h2>
+      <ul class="list-disc list-inside">
+        <li><a href="https://github.com/jaquanwatson/account-inactivity-monitor" target="_blank" rel="noopener noreferrer" class="project-link">Account Inactivity Monitor</a> - Built an automated PowerShell tool to identify and remediate inactive accounts in Active Directory/M365.</li>
+        <li><a href="https://github.com/jaquanwatson/m365-license-tracker" target="_blank" rel="noopener noreferrer" class="project-link">M365 License Tracker</a> - Developed a PowerShell tool to audit and track Microsoft 365 license assignments across users and groups.</li>
+        <li><a href="https://github.com/jaquanwatson/password-reminder-bot" target="_blank" rel="noopener noreferrer" class="project-link">Password Reminder Bot</a> - Automated password expiry notifications using Microsoft Power Automate and Azure Functions.</li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-blue-700">Education</h2>
+      <p><strong>Master of Science in Information Technology Management</strong> (In Progress)<br>Western Governors University | Expected: March 2026</p>
+      <p class="mt-2"><strong>Bachelor of Business Administration</strong><br>Lewis University | 2022</p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-bold mb-4 text-blue-700">Technical Skills</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="skill-tag px-3 py-1 rounded-full">Defender for Endpoint</span>
+        <span class="skill-tag px-3 py-1 rounded-full">SolarWinds</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Intune</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Azure Security Center</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Microsoft 365 GCC High</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Azure AD</span>
+        <span class="skill-tag px-3 py-1 rounded-full">AWS EC2/S3/CloudWatch</span>
+        <span class="skill-tag px-3 py-1 rounded-full">PowerShell</span>
+        <span class="skill-tag px-3 py-1 rounded-full">SQL (Basic)</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Excel (Advanced)</span>
+        <span class="skill-tag px-3 py-1 rounded-full">SSMS</span>
+        <span class="skill-tag px-3 py-1 rounded-full">Data Visualization (Beginner)</span>
+      </div>
+    </section>
+
+  </main>
 </body>
+
 </html>
