@@ -4,6 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO Meta Tags -->
+<meta name="description" content="Jaquan Watson - Cloud & Systems Engineer | Cybersecurity Professional">
+<meta name="author" content="Jaquan Watson">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Social Media -->
+<meta property="og:title" content="Jaquan Watson | Resume">
+<meta property="og:description" content="Cloud & Systems Engineer with expertise in M365, Azure, Cybersecurity, and Automation. Download my resume or view online.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jaquanwatson.github.io/resume.html">
+<meta property="og:image" content="https://avatars.githubusercontent.com/u/YOUR_GITHUB_USER_ID?v=4"> <!-- Optional avatar image -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jaquan Watson | Resume">
+<meta name="twitter:description" content="Cloud & Systems Engineer with expertise in M365, Azure, Cybersecurity, and Automation.">
+
   <title>Jaquan Watson | Resume</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,23 +27,17 @@
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     }
-    .certification-badge::before {
-      content: "\1F393"; /* Graduation Cap */
-      margin-right: 0.5rem;
-    }
-    .skill-tag::before {
-      content: "\1F4BB"; /* Laptop */
-      margin-right: 0.5rem;
-    }
-    .in-progress-badge::before {
-      content: "\23F3"; /* Hourglass */
-      margin-right: 0.5rem;
+    @media print {
+      .no-print { display: none !important; }
+      body { -webkit-print-color-adjust: exact; }
+      .print-shadow-none { box-shadow: none !important; }
+      .print-p-0 { padding: 0 !important; }
     }
   </style>
 </head>
 
 <body class="bg-gradient-to-br from-slate-100 to-blue-100 text-gray-800 leading-relaxed min-h-screen">
-  <main class="max-w-6xl mx-auto p-6 sm:p-10 bg-white shadow-2xl mt-8 mb-8 rounded-3xl print-p-0 print-shadow-none border border-gray-200">
+  <main class="max-w-6xl mx-auto p-6 sm:p-10 bg-white shadow-2xl mt-8 mb-8 rounded-3xl print:p-0 print:shadow-none border border-gray-200">
 
     <!-- Header Section -->
     <header class="text-center mb-12 pb-8 border-b border-gray-300">
@@ -36,19 +46,19 @@
       </h1>
       <p class="text-2xl text-gray-700 mb-6 font-semibold">Cloud & Systems Engineer | Cybersecurity Professional</p>
       <div class="flex flex-wrap justify-center gap-5 text-md">
-        <a class="contact-link text-blue-600 hover:text-blue-800 transition" href="mailto:jqwatson96@gmail.com">📧 jqwatson96@gmail.com</a>
-        <a class="contact-link text-blue-600 hover:text-blue-800 transition" href="https://www.linkedin.com/in/jaquanwatson/" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
-        <a class="contact-link text-blue-600 hover:text-blue-800 transition" href="https://github.com/jaquanwatson" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
+        <a class="contact-link text-blue-600 hover:text-blue-800 transition" href="mailto:jqwatson96@gmail.com">jqwatson96@gmail.com</a>
+        <a class="contact-link text-blue-600 hover:text-blue-800 transition" href="https://www.linkedin.com/in/jaquanwatson/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+        <a class="contact-link text-blue-600 hover:text-blue-800 transition" href="https://github.com/jaquanwatson" target="_blank" rel="noopener noreferrer">GitHub Portfolio</a>
       </div>
     </header>
 
     <!-- Action Buttons -->
     <div class="mb-10 text-center no-print">
       <a href="resume.pdf" download class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-full hover:from-blue-700 hover:to-blue-800 transition shadow-lg hover:shadow-2xl transform hover:-translate-y-1 inline-block mr-4">
-        📄 Download Resume (PDF)
+        Download Resume (PDF)
       </a>
       <button onclick="window.print()" class="bg-gradient-to-r from-green-600 to-green-700 text-white px-6 py-3 rounded-full hover:from-green-700 hover:to-green-800 transition shadow-lg hover:shadow-2xl transform hover:-translate-y-1 inline-block">
-        🖨️ Print Resume
+        Print Resume
       </button>
     </div>
 
@@ -62,16 +72,16 @@
     <section class="mb-12">
       <h2 class="text-3xl font-bold mb-6 text-blue-700">Core Competencies</h2>
       <div class="flex flex-wrap gap-3">
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Security Operations (SecOps)</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Threat Management</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Compliance Support</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Microsoft 365, Azure, AWS</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">IAM, MFA, Conditional Access</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Intune, Defender for Endpoint</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">PowerShell Scripting</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">SQL Server</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Hyper-V | GPO Management</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Incident Response | Risk Assessment</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Security Operations (SecOps)</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Threat Management</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Compliance Support</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Microsoft 365, Azure, AWS</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">IAM, MFA, Conditional Access</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Intune, Defender for Endpoint</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">PowerShell Scripting</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">SQL Server</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Hyper-V | GPO Management</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Incident Response | Risk Assessment</span>
       </div>
     </section>
 
@@ -79,12 +89,12 @@
     <section class="mb-12">
       <h2 class="text-3xl font-bold mb-6 text-blue-700">Certifications</h2>
       <div class="flex flex-wrap gap-3">
-        <span class="certification-badge bg-green-100 px-4 py-2 rounded-full">CompTIA Security+</span>
-        <span class="certification-badge bg-green-100 px-4 py-2 rounded-full">AWS Certified Cloud Practitioner</span>
-        <span class="certification-badge bg-green-100 px-4 py-2 rounded-full">ITIL v4 Foundations</span>
-        <span class="certification-badge bg-green-100 px-4 py-2 rounded-full">LPI Linux Essentials (LPIC-1)</span>
-        <span class="certification-badge in-progress-badge bg-yellow-100 px-4 py-2 rounded-full">In Progress: CompTIA CySA+</span>
-        <span class="certification-badge in-progress-badge bg-yellow-100 px-4 py-2 rounded-full">Planned: Microsoft SC-200 | AZ-500</span>
+        <span class="bg-green-100 px-4 py-2 rounded-full">CompTIA Security+</span>
+        <span class="bg-green-100 px-4 py-2 rounded-full">AWS Certified Cloud Practitioner</span>
+        <span class="bg-green-100 px-4 py-2 rounded-full">ITIL v4 Foundations</span>
+        <span class="bg-green-100 px-4 py-2 rounded-full">LPI Linux Essentials (LPIC-1)</span>
+        <span class="bg-yellow-100 px-4 py-2 rounded-full border border-yellow-200">In Progress: CompTIA CySA+</span>
+        <span class="bg-yellow-100 px-4 py-2 rounded-full border border-yellow-200">Planned: Microsoft SC-200 | AZ-500</span>
       </div>
     </section>
 
@@ -125,9 +135,9 @@
     <section class="mb-12">
       <h2 class="text-3xl font-bold mb-6 text-blue-700">Projects & Initiatives</h2>
       <ul class="list-disc list-inside text-lg space-y-3">
-        <li><a href="https://github.com/jaquanwatson/account-inactivity-monitor" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Account Inactivity Monitor</a> - Built an automated PowerShell tool to identify and remediate inactive accounts in Active Directory/M365.</li>
-        <li><a href="https://github.com/jaquanwatson/m365-license-tracker" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">M365 License Tracker</a> - Developed a PowerShell tool to audit and track Microsoft 365 license assignments across users and groups.</li>
-        <li><a href="https://github.com/jaquanwatson/password-reminder-bot" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Password Reminder Bot</a> - Automated password expiry notifications using Microsoft Power Automate and Azure Functions.</li>
+        <li><a href="https://github.com/jaquanwatson/account-inactivity-monitor" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Account Inactivity Monitor</a> - Built an automated PowerShell tool to identify and remediate inactive accounts in Active Directory/M365.</li>
+        <li><a href="https://github.com/jaquanwatson/m365-license-tracker" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">M365 License Tracker</a> - Developed a PowerShell tool to audit and track Microsoft 365 license assignments across users and groups.</li>
+        <li><a href="https://github.com/jaquanwatson/password-reminder-bot" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">Password Reminder Bot</a> - Automated password expiry notifications using Microsoft Power Automate and Azure Functions.</li>
       </ul>
     </section>
 
@@ -142,18 +152,18 @@
     <section class="mb-12">
       <h2 class="text-3xl font-bold mb-6 text-blue-700">Technical Skills</h2>
       <div class="flex flex-wrap gap-3">
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Defender for Endpoint</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">SolarWinds</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Intune</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Azure Security Center</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Microsoft 365 GCC High</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Azure AD</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">AWS EC2/S3/CloudWatch</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">PowerShell</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">SQL (Basic)</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Excel (Advanced)</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">SSMS</span>
-        <span class="skill-tag px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Data Visualization (Beginner)</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Defender for Endpoint</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">SolarWinds</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Intune</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Azure Security Center</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Microsoft 365 GCC High</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Azure AD</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">AWS EC2/S3/CloudWatch</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">PowerShell</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">SQL (Basic)</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Excel (Advanced)</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">SSMS</span>
+        <span class="px-4 py-2 bg-gray-100 hover:bg-blue-100 rounded-full transition">Data Visualization (Beginner)</span>
       </div>
     </section>
 
